@@ -8,12 +8,12 @@ package estructura_proyecto_prueba;
  *
  * @author 07CHMK1PA104A03
  */
-public class Frm_Cleintes extends javax.swing.JFrame {
+public class FRM_Empleados extends javax.swing.JFrame {
 
     /**
-     * Creates new form Frm_Cleintes
+     * Creates new form FRM_Empleados
      */
-    public Frm_Cleintes() {
+    public FRM_Empleados() {
         initComponents();
     }
 
@@ -26,31 +26,21 @@ public class Frm_Cleintes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        BTN_NUEVO = new javax.swing.JButton();
-        Actualizar = new javax.swing.JButton();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        BTN_NUEVO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/nuevo.png"))); // NOI18N
-        BTN_NUEVO.setText("Nuevo");
-        BTN_NUEVO.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BTN_NUEVOActionPerformed(evt);
-            }
-        });
-        getContentPane().add(BTN_NUEVO, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
-
-        Actualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/editar.png"))); // NOI18N
-        Actualizar.setText("Actualizar");
-        getContentPane().add(Actualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, -1, -1));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void BTN_NUEVOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_NUEVOActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BTN_NUEVOActionPerformed
 
     /**
      * @param args the command line arguments
@@ -69,26 +59,24 @@ public class Frm_Cleintes extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Frm_Cleintes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FRM_Empleados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Frm_Cleintes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FRM_Empleados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Frm_Cleintes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FRM_Empleados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Frm_Cleintes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FRM_Empleados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Frm_Cleintes().setVisible(true);
+                new FRM_Empleados().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Actualizar;
-    private javax.swing.JButton BTN_NUEVO;
     // End of variables declaration//GEN-END:variables
 }
